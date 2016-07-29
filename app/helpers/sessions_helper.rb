@@ -60,4 +60,8 @@ module SessionsHelper
     session[:forwarding_url] = request.original_url if request.get?
   end
 
+  def activated?
+    self.activated == true
+  end
+
 end
